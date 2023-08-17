@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
+
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__header-logo"> <!-- скорее всего это должны быть два отдельных блока, так как там два отдельных изображения, которые переиспользуются -->
         <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи"> <!-- "На предыдущем шаге мы рассмотрели,
           как можно именовать изображение логотипа. В дальнейшей работе этот класс нам не понадобится (об этом мы поговорим чуть позже),
           поэтому удалим его с изображения." - пока не удаляю"-->
-
       </a>
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="#" width="101" height="18" alt="Кэт энерджи">
@@ -38,7 +38,6 @@
     </header>
 
     <main class="main-container">
-
       <section class="lead">
         <div class="lead__wrapper">
           <header class="lead__header">
@@ -112,13 +111,48 @@
             <dd class="example__description">Затраты на питание:</dd>
             <dt class="example__purpose">15 000 РУБ.</dt> <!-- Можно ли менять dd и dt местами? По смыслу они должны быть записаны именно так-->
           </dl>
-
-
-
-          </dl>
         </div>
       </section>
-
     </main>
+
+    <footer>
+      <div class="main-footer__wrapper">
+
+        <div class="main-footer__contacts contacts"> <!--таким образом мы добавили отдельный БЛОК-->
+          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+
+        <div class="main-footer__map">
+          <img class="main-footer__map-image" src="#" width="320" height="362" alt="Мы на карте">
+        </div>
+
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--catenergy" href="#">Главная нашего сайта</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+            <b class="copyright__text">HTML Academy</b>
+            <img class="main-footer__icon-HTML" src="#" width="33" height="37" alt="HTML Academy">
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
   </body>
 </html>
