@@ -36,9 +36,9 @@
     </header>
 
     <main class="program-selection-container">
-      <section class="form">
-        <h1 class="form__headline">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем
+      <section class="selection-form">
+        <h1 class="selection-form__headline">Подбор программы</h1>
+        <p class="selection-form__description">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
           <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -51,8 +51,34 @@
             <label for="age-field">Возраст (лет):</label>
               <input type="text" name="age" id="age-field" value="7">
           </form>
-
       </section>
+
+      <section class="purpose-form">
+        <h2 class="visually-hidden">Цель питания</h2>
+
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="checkbox" name="weight-loss" id="weight-loss-field" checked>
+          <label for="weight-loss-field">Похудение</label>
+
+          <input type="checkbox" name="weight-gain" id="weight-gain-field">
+          <label for="weight-gain-field">Набор массы</label>
+
+          <input type="checkbox" name="advice" id="advice-field">
+          <label for="advice-field">Не знаю (Нужен ваш совет)</label>
+      </section>
+
+      <!-- тут будут контактные данные -->
+
+      <section class="comment-form">
+        <h2 class="comment-form__headline">Комментарий</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <textarea name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
+        </form>
+      </section>
+
+      <!-- тут будут дополнительные данные - второй чекбокс -->
+
+
     </main>
 
     <footer>
