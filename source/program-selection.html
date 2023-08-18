@@ -6,7 +6,8 @@
   </head>
 
   <body class="page__body">
-    < class="main-header">
+    <header class="main-header"> <!--класс всё ещё main-header? в обучении отмечалось, что main-header - хэдер главной страницы.
+      но хэдер на главной, в каталоге и в форме не отличается -->
       <a class="main-header__header-logo">
         <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи">
       </a>
@@ -41,7 +42,7 @@
         <p class="selection-form__description">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label for="name-field">ИМЯ:*</label>
               <input type="text" name="name" id="name-field" value="БАРСИК">
 
@@ -56,7 +57,7 @@
       <section class="purpose-form">
         <h2 class="visually-hidden">Цель питания</h2>
 
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <label>
             <input type="radio" name="purpose" value="weight-loss" checked>
             Похудение
@@ -74,18 +75,28 @@
         </form>
       </section>
 
-      <!-- тут будут контактные данные -->
+      <section class="contacts-form">
+        <h2 class="contacts-form__headline">Контактные данные
+          (владельца кота)</h2>
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <label for="email">E-mail:*</label>
+          <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+
+          <label for="phone">Телефон:*</label>
+          <input type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+        </form>
+      </section>
 
       <section class="comment-form">
         <h2 class="comment-form__headline">Комментарий</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <textarea name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
         </form>
       </section>
 
       <section class="extra-form">
         <h2 class="extra-form__headline">Дополнительно</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <select name="extra" multiple size="4">
             <option>сахарозаменитель</option>
             <option>питьевая вода</option>
@@ -98,12 +109,11 @@
           если нет, как их объединить и сделать для них единую кнопку?-->
           <p>* — Обязательные поля</p>
       </section>
-
-
     </main>
 
-    <footer>
-      <div class="main-footer__wrapper">
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">  <!--класс всё ещё main-footer? в обучении отмечалось, что main-header - хэдер главной страницы.
+        но хэдер на главной, в каталоге и в форме не отличается -->
 
         <div class="main-footer__contacts contacts">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
