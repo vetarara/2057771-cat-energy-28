@@ -83,19 +83,20 @@
         </form>
       </section>
 
-      <section class="purpose-form">
-        <h2 class="visually-hidden">Дополнительно</h2>
-
+      <section class="extra-form">
+        <h2 class="comment-form__headline">Дополнительно</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <input type="checkbox" name="weight-loss" id="weight-loss-field" checked>
-          <label for="weight-loss-field">Похудение</label>
-
-          <input type="checkbox" name="weight-gain" id="weight-gain-field">
-          <label for="weight-gain-field">Набор массы</label>
-
-          <input type="checkbox" name="advice" id="advice-field">
-          <label for="advice-field">Не знаю (Нужен ваш совет)</label>
+          <select name="extra" multiple size="4">
+            <option>сахарозаменитель</option>
+            <option>питьевая вода</option>
+            <option>молоко</option>
+            <option>витамины</option>
+          </select>
         </form>
+
+        <input type="submit" value="Отправить заявку"> <!-- нормально ли то, что эта кнопка вне какой-либо формы?
+          если нет, как их объединить и сделать для них единую кнопку?-->
+          <p>* — Обязательные поля</p>
       </section>
 
 
