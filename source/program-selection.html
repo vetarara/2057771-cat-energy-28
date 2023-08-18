@@ -35,8 +35,24 @@
       </nav>
     </header>
 
-    <main>
+    <main class="program-selection-container">
+      <section class="form">
+        <h1 class="form__headline">Подбор программы</h1>
+        <p class="form__description">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
 
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label for="name-field">ИМЯ:*</label>
+              <input type="text" name="name" id="name-field" value="БАРСИК">
+
+            <label for="weight-field">Вес (кг):*</label>
+              <input type="text" name="weight" id="weight-field" value="7">
+
+            <label for="age-field">Возраст (лет):</label>
+              <input type="text" name="age" id="age-field" value="7">
+          </form>
+
+      </section>
     </main>
 
     <footer>
