@@ -7,12 +7,10 @@
 
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__header-logo"> <!-- скорее всего это должны быть два отдельных блока, так как там два отдельных изображения, которые переиспользуются -->
-        <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи"> <!-- "На предыдущем шаге мы рассмотрели,
-          как можно именовать изображение логотипа. В дальнейшей работе этот класс нам не понадобится (об этом мы поговорим чуть позже),
-          поэтому удалим его с изображения." - пока не удаляю"-->
+      <a class="main-header__header-logo">
+        <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи">
       </a>
-      <a class="main-header__logo">
+      <a class="main-header__logo"> <!-- скорее всего это должен быть отдельный блок, так как это изображение переиспользуются в футере? -->
         <img class="main-header__logo-image" src="#" width="101" height="18" alt="Кэт энерджи">
       </a>
 
@@ -50,7 +48,7 @@
             <div class="lead__item">
               <dt class="lead__purpose">Похудение</dt>
               <dd class="lead__description">
-                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! <!-- нужно ли использовать тег br здесь и в остальном тексте? -->
                 Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 <a class="lead__details" href="#">Каталог Slim</a>
               </dd>
@@ -105,7 +103,7 @@
           </dl>
 
           <!--<p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-            это по идее такая же конструкция, как и предыдущая - термин_значение, поэтому лучше так:-->
+            это по идее такая же конструкция, как и предыдущая - термин-значение, поэтому лучше так:-->
 
           <dl class="example__price">
             <dd class="example__description">Затраты на питание:</dd>
@@ -118,7 +116,7 @@
     <footer>
       <div class="main-footer__wrapper">
 
-        <div class="main-footer__contacts contacts"> <!--таким образом мы добавили отдельный БЛОК-->
+        <div class="main-footer__contacts contacts">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
