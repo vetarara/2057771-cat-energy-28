@@ -2,12 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Подбор программы Кэт энерджи</title> <!-- title здесь ведь должен отличаться от title на главной и в каталоге? -->
+    <title>HTML Academy: Подбор программы Кэт энерджи</title>
   </head>
 
   <body class="page__body">
-    <header class="main-header"> <!--класс всё ещё main-header? в обучении отмечалось, что main-header - хэдер главной страницы.
-      но хэдер на главной, в каталоге и в форме не отличается -->
+    <header class="main-header">
       <a class="main-header__header-logo">
         <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи">
       </a>
@@ -44,13 +43,13 @@
 
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="name-field">ИМЯ:*</label>
-              <input type="text" name="name" id="name-field" value="БАРСИК">
+              <input type="text" name="name" id="name-field" placeholder="БАРСИК">
 
             <label for="weight-field">Вес (кг):*</label>
-              <input type="text" name="weight" id="weight-field" value="7">
+              <input type="text" name="weight" id="weight-field" placeholder="7">
 
             <label for="age-field">Возраст (лет):</label>
-              <input type="text" name="age" id="age-field" value="7">
+              <input type="text" name="age" id="age-field" placeholder="7">
           </form>
       </section>
 
@@ -59,17 +58,17 @@
 
         <form action="https://echo.htmlacademy.ru" method="post">
           <label>
-            <input type="radio" name="purpose" value="weight-loss" checked>
+            <input type="radio" name="purpose" placeholder="weight-loss" checked>
             Похудение
           </label>
           <br>
           <label>
-            <input type="radio" name="purpose" value="weight-gain">
+            <input type="radio" name="purpose" placeholder="weight-gain">
             Набор массы
           </label>
           <br>
           <label>
-            <input type="radio" name="purpose" value="need-advice">
+            <input type="radio" name="purpose" placeholder="need-advice">
             Не знаю (Нужен ваш совет)
           </label>
         </form>
