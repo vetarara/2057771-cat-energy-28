@@ -43,17 +43,17 @@
 
           <form class="selection-form__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="selection-form__wrapper main-information"> <!--запуталась с классами на fieldset'ах-->
+            <fieldset class="selection-form__wrapper main-information">
               <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
-              <div class="main-information-field">
+              <div class="main-information__field main-information-field">
                 <label class="main-information-field__question" for="name-field">ИМЯ:*</label>
                 <input class="main-information-field__answer" type="text" name="name" id="name-field" placeholder="БАРСИК">
               </div>
-              <div class="main-information-field">
+              <div class="main-information__field main-information-field">
                 <label class="main-information-field__question" for="weight-field">Вес (кг):*</label>
                 <input class="main-information-field__answer" type="text" name="weight" id="weight-field" placeholder="7">
               </div>
-              <div class="main-information-field">
+              <div class="main-information__field main-information-field">
                 <label class="main-information-field__question" for="age-field">Возраст (лет):</label>
                 <input class="main-information-field__answer" type="text" name="age" id="age-field" placeholder="7">
               </div>
@@ -61,17 +61,17 @@
 
             <fieldset class="selection-form__wrapper purpose-information">
               <legend class="visually-hidden">Выберите цель питания</legend>
-              <label class="purpose-information-field">
+              <label class="purpose-information__field purpose-information-field">
                 <input type="radio" name="purpose" placeholder="weight-loss" checked>
                 Похудение
               </label>
               <br>
-              <label class="purpose-information-field">
+              <label class="purpose-information__field purpose-information-field">
                 <input type="radio" name="purpose" placeholder="weight-gain">
                 Набор массы
               </label>
               <br>
-              <label class="purpose-information-field">
+              <label class="purpose-information__field purpose-information-field">
                 <input type="radio" name="purpose" placeholder="need-advice">
                 Не знаю (Нужен ваш совет)
               </label>
@@ -107,6 +107,19 @@
                 <option>молоко</option>
                 <option>витамины</option>
               </select>
+            </fieldset>
+
+            <fieldset class="selection-form__wrapper extra-information"> <!--Чекбокс не подразумевает выбор одного элемента из нескольких.
+              Поэтому если в одной форме есть несколько чекбоксов, то имена у них должны быть разными.-->
+              <legend class="visually-hidden">Дополнительно</legend>
+              <p class="extra-information__title section-title">Дополнительно</p>
+              <div class="extra-information__checkbox extra-information">
+                <input type="checkbox" name="sweetener" id="subscribe-field" checked>
+                <label for="subscribe-field">сахарозаменитель</label>
+
+                <option>питьевая вода</option>
+                <option>молоко</option>
+                <option>витамины</option>
             </fieldset>
 
             <div class="selection-form__wrapper submit-application">
