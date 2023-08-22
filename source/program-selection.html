@@ -61,20 +61,24 @@
 
             <fieldset class="selection-form__wrapper purpose-information">
               <legend class="visually-hidden">Выберите цель питания</legend>
-              <label class="purpose-information__field">
-                <input type="radio" name="purpose" placeholder="weight-loss" checked>
+              <div class="purpose-information__field purpose-information-field">
+                <label class="purpose-information-field__radio">
+                <input class="purpose-information-field__radio" type="radio" name="purpose" placeholder="weight-loss" checked>
                 Похудение
-              </label>
-              <br>
-              <label class="purpose-information__field">
-                <input type="radio" name="purpose" placeholder="weight-gain">
+                </label>
+              </div>
+              <div class="purpose-information__field purpose-information-field"></div>
+                <label class="purpose-information-field__radio">
+                <input class="purpose-information-field__radio" type="radio" name="purpose" placeholder="weight-gain">
                 Набор массы
-              </label>
-              <br>
-              <label class="purpose-information__field">
-                <input type="radio" name="purpose" placeholder="need-advice">
+                </label>
+              </div>
+              <div class="purpose-information__field purpose-information-field">
+                <label class="purpose-information-field__radio">
+                <input class="purpose-information-field__radio" type="radio" name="purpose" placeholder="need-advice">
                 Не знаю (Нужен ваш совет)
-              </label>
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="selection-form__wrapper contacts-information">
