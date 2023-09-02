@@ -1,7 +1,7 @@
-.main-nav__list {
+ .main-nav__list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -10,6 +10,19 @@
   font-style: normal;
   min-width: 280px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {//"главная-каталог-программа" встали в строку - <div class="main-nav__wrapper"> - лишний?
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 40px; //или должно быть 69+40 = 109?
+    width: 478px;
+  }
 }
 
 .main-nav__item a {
@@ -17,10 +30,8 @@
   text-decoration: none;
 }
 
-
-@media (min-width: @tablet-width) {
-  .main-nav__list { //"главная-каталог-программа" встали в строку
-    display: flex;
-    flex-direction: row;
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
