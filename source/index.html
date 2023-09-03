@@ -2,37 +2,42 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__header-logo">
-        <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи">
-      </a>
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="101" height="18" alt="Кэт энерджи">
-      </a>
+      <div class="main-header__menu">
+        <div class="main-header__two-logo">
+          <a class="main-header__header-logo">
+            <img class="main-header__logo-icon" src="../img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
+          </a>
+          <a class="main-header__logo">
+            <img class="main-header__logo-image" src="../img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+          </a>
+      </div>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="program-selection.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+         <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="program-selection.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+      </div>
       </nav>
     </header>
 
@@ -92,21 +97,22 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__purpose">5 КГ</dt>
-              <dd class="example__description">снижение веса</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__purpose">60 ДНЕЙ</dt>
-              <dd class="example__description">затрачено времени</dd>
-            </div>
-          </dl>
 
-          <dl class="example__price">
-            <dd class="example__description--uppercase">Затраты на питание:</dd>
-            <dt class="example__purpose">15 000 РУБ.</dt>
-          </dl>
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__purpose">5 КГ</dt>
+                <dd class="example__description-item">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__purpose">60 ДНЕЙ</dt>
+                <dd class="example__description-item">затрачено времени</dd>
+              </div>
+              <div class="example__item example__item--price">
+                <dd class="example__description-item--uppercase">Затраты на питание:</dd>
+                <dt class="example__purpose--uppercase">15 000 РУБ.</dt>
+              </div>
+            </dl>
+
         </div>
 
         <div class="example__slider">

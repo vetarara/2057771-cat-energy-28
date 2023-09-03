@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Подбор программы Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,10 +10,10 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__header-logo">
-        <img class="main-header__logo-icon" src="#" width="33" height="37" alt="Кэт энерджи">
+        <img class="main-header__logo-icon" src="../img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи">
       </a>
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="101" height="18" alt="Кэт энерджи">
+        <img class="main-header__logo-image" src="../img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
 
       <nav class="main-nav">
@@ -44,57 +45,61 @@
 
           <form class="main-selection__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="main-selection__wrapper main-information">
-              <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
-              <div class="main-information__field main-information-field">
-                <label class="main-information-field__question" for="name-field">ИМЯ:*</label>
-                <input class="main-information-field__answer" type="text" name="name" id="name-field" placeholder="БАРСИК">
-              </div>
-              <div class="main-information__field main-information-field">
-                <label class="main-information-field__question" for="weight-field">Вес (кг):*</label>
-                <input class="main-information-field__answer" type="text" name="weight" id="weight-field" placeholder="7">
-              </div>
-              <div class="main-information__field main-information-field">
-                <label class="main-information-field__question" for="age-field">Возраст (лет):</label>
-                <input class="main-information-field__answer" type="text" name="age" id="age-field" placeholder="7">
-              </div>
-            </fieldset>
+            <div class="main-selection__main-purpose">
+              <fieldset class="main-selection__wrapper main-information">
+                <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
+                <div class="main-information__field main-information-field">
+                  <label class="main-information-field__question" for="name-field">ИМЯ:*</label>
+                  <input class="main-information-field__answer" type="text" name="name" id="name-field" placeholder="БАРСИК">
+                </div>
+                <div class="main-information__field main-information-field">
+                  <label class="main-information-field__question" for="weight-field">Вес (кг):*</label>
+                  <input class="main-information-field__answer" type="text" name="weight" id="weight-field" placeholder="7">
+                </div>
+                <div class="main-information__field main-information-field">
+                  <label class="main-information-field__question" for="age-field">Возраст (лет):</label>
+                  <input class="main-information-field__answer" type="text" name="age" id="age-field" placeholder="7">
+                </div>
+              </fieldset>
 
-            <fieldset class="main-selection__wrapper purpose-information">
-              <legend class="visually-hidden">Выберите цель питания</legend>
-              <div class="purpose-information__field purpose-information-field">
-                <label class="purpose-information-field__radio">
-                <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="weight-loss" checked>
-                Похудение
-                </label>
-              </div>
-              <div class="purpose-information__field purpose-information-field">
-                <label class="purpose-information-field__radio">
-                <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="weight-gain">
-                Набор массы
-                </label>
-              </div>
-              <div class="purpose-information__field purpose-information-field">
-                <label class="purpose-information-field__radio">
-                <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="need-advice">
-                Не знаю (Нужен ваш совет)
-                </label>
-              </div>
-            </fieldset>
+              <fieldset class="main-selection__wrapper purpose-information">
+                <legend class="visually-hidden">Выберите цель питания</legend>
+                <div class="purpose-information__field purpose-information-field">
+                  <label class="purpose-information-field__radio">
+                  <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="weight-loss" checked>
+                  Похудение
+                  </label>
+                </div>
+                <div class="purpose-information__field purpose-information-field">
+                  <label class="purpose-information-field__radio">
+                  <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="weight-gain">
+                  Набор массы
+                  </label>
+                </div>
+                <div class="purpose-information__field purpose-information-field">
+                  <label class="purpose-information-field__radio">
+                  <input class="purpose-information-field__text" type="radio" name="purpose" placeholder="need-advice">
+                  Не знаю (Нужен ваш совет)
+                  </label>
+                </div>
+              </fieldset>
+            </div>
 
             <fieldset class="main-selection__wrapper contacts-information">
               <legend class="visually-hidden">Введите ваши контактные данные</legend>
               <p class="contacts-information__title section-title">Контактные данные (владельца кота)</p>
 
-              <div class="contacts-information__field contacts-information-field">
-                <label class="contacts-information-field__question" for="email">E-mail:*</label>
-                <input class="contacts-information-field__answer" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-              </div>
+              <div class="contacts-information__wrapper">
+                <div class="contacts-information__field contacts-information-field">
+                  <label class="contacts-information-field__question" for="email">E-mail:*</label>
+                  <input class="contacts-information-field__answer" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                </div>
 
-              <div class="contacts-information__field contacts-information-field">
-                <label class="contacts-information-field__question" for="phone">Телефон:*</label>
-                <input class="contacts-information-field__answer" type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
-              </div>
+                <div class="contacts-information__field contacts-information-field">
+                  <label class="contacts-information-field__question" for="phone">Телефон:*</label>
+                  <input class="contacts-information-field__answer" type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                </div>
+            </div>
             </fieldset>
 
             <fieldset class="main-selection__wrapper comment-information">
@@ -106,22 +111,24 @@
             <fieldset class="main-selection__wrapper extra-information">
               <legend class="visually-hidden">Дополнительно</legend>
               <p class="extra-information__title section-title">Дополнительно</p>
-              <div class="extra-information__checkbox extra-information-checkbox">
-                <input class="extra-information-checkbox__check" type="checkbox" name="sweetener" id="extra-information-field" checked>
-                <label class="extra-information-checkbox__text" for="extra-information-field">сахарозаменитель</label>
-              </div>
-              <div class="extra-information__checkbox extra-information-checkbox">
-                <input class="extra-information-checkbox__check" type="checkbox" name="water" id="extra-information-field">
-                <label class="extra-information-checkbox__text" for="extra-information-field">питьевая вода</label>
-              </div>
-              <div class="extra-information__checkbox extra-information-checkbox">
-                <input class="extra-information-checkbox__check" type="checkbox" name="milk" id="extra-information-field">
-                <label class="extra-information-checkbox__text" for="extra-information-field">молоко</label>
-              </div>
-              <div class="extra-information__checkbox extra-information-checkbox">
-                <input class="extra-information-checkbox__check" type="checkbox" name="vitamins" id="extra-information-field">
-                <label class="extra-information-checkbox__text" for="extra-information-field">витамины</label>
-              </div>
+              <div class="extra-information__checkbox-wrapper">
+                <div class="extra-information__checkbox extra-information-checkbox">
+                  <input class="extra-information-checkbox__check" type="checkbox" name="sweetener" id="extra-information-field" checked>
+                  <label class="extra-information-checkbox__text" for="extra-information-field">сахарозаменитель</label>
+                </div>
+                <div class="extra-information__checkbox extra-information-checkbox">
+                  <input class="extra-information-checkbox__check" type="checkbox" name="water" id="extra-information-field">
+                  <label class="extra-information-checkbox__text" for="extra-information-field">питьевая вода</label>
+                </div>
+                <div class="extra-information__checkbox extra-information-checkbox">
+                  <input class="extra-information-checkbox__check" type="checkbox" name="milk" id="extra-information-field">
+                  <label class="extra-information-checkbox__text" for="extra-information-field">молоко</label>
+                </div>
+                <div class="extra-information__checkbox extra-information-checkbox">
+                  <input class="extra-information-checkbox__check" type="checkbox" name="vitamins" id="extra-information-field">
+                  <label class="extra-information-checkbox__text" for="extra-information-field">витамины</label>
+                </div>
+            </div>
             </fieldset>
 
             <div class="main-selection__wrapper submit-application">

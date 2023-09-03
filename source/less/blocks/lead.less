@@ -3,11 +3,29 @@
   margin-bottom: 20px;
 }
 
+.lead__list {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .lead__header {
-  background-color: #68b738;
-  background-image: url("../img/index/index-background-cat.jpg"); //тут должна быть маска или это вообще должен быть svg?
+  background-color: #4f4f53;
+  background-image: url("../img/index/index-background-cat.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1654px;
+}
 }
 
 .lead__headline {
@@ -28,6 +46,7 @@
 }
 
 .lead__selection {
+  background-color: #68b738;
   text-transform: uppercase;
   color: @white;
   font-family: "Oswald", "Arial", sans-serif;
@@ -37,6 +56,15 @@
 
 .lead__item {
   background-color: #d9d9d9;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .lead__purpose {

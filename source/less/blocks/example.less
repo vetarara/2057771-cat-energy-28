@@ -5,6 +5,14 @@
 .example__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 
@@ -16,8 +24,22 @@
   font-family: "Oswald", "Arial", sans-serif;
 }
 
-.example__purpose,
-.example__description--uppercase {
+.example__list {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: 70px 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 25% 25% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 162px 162px;
+    grid-template-rows: 77px 20px;
+  }
+}
+
+.example__purpose {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -26,7 +48,16 @@
   font-family: "Oswald", "Arial", sans-serif;
 }
 
-.example__description {
+.example__description-item {
   font-size: 12px;
   line-height: 12px;
+}
+
+.example__item--price {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @black;
+  font-family: "Oswald", "Arial", sans-serif;
 }
